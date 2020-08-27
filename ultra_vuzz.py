@@ -30,8 +30,8 @@ while True:
   distance = round(distance, 2)            #Round to two decimal points
 
   if distance < 1.2: 
-    #GPIO.output(buzzer,GPIO.HIGH)
-    #print ("Beep")
+    GPIO.output(buzzer,GPIO.HIGH)
+    print ("Beep")
     sleep(0.5) # Delay in seconds		     #Check whether the distance is within range
     print ("Distance:",distance - 0.5,"cm")  #Print distance with 0.5 cm calibration
   else:
